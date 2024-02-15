@@ -1,0 +1,127 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, pre, code, blockquote, hr, table, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  position: fixed; /* Ajout de la propriété position fixe */
+  width: 100%; /* Pour occuper toute la largeur de la fenêtre */
+  top: 0;  Pour fixer le header en haut de la fenêtre */
+  z-index: 999;  Pour s'assurer que le header est au-dessus du reste du contenu */
+}
+
+.main-content {
+    overflow-y: auto; /* Autoriser le défilement vertical lorsque le contenu dépasse la hauteur maximale */
+    max-height: calc(100vh - 120px); /* Ajuster la hauteur maximale selon la taille du header et du footer */
+
+}
+.header-right button:last-child {
+  margin-right: 30px; /* Ajouter de l'espace à droite du dernier bouton */
+}
+
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+
+}
+
+header img {
+  width: 200px;
+  margin-left: 10px; /* Ajouter un espace entre l'image et le texte */
+}
+
+.header-right button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.header-right button:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+main {
+  padding: 80px;
+}
+
+section {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+footer {
+  background-color: #ccc;
+  text-align: center;
+    position: fixed; /* Ajout de la propriété position fixe */
+    width: 100%; /* Pour occuper toute la largeur de la fenêtre */
+    bottom: 0; /* Pour fixer le header en haut de la fenêtre */
+    z-index: 999; /* Pour s'assurer que le header est au-dessus du reste du contenu */
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #000;
+}
+
+footer ul li a:hover {
+  color: #666;
+}
+
+#titre_niveau2 {
+  text-align: center; /* Pour centrer l'élément */
+  font-size: 24px; /* Ajustez la taille de la police selon vos besoins */
+}

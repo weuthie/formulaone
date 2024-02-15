@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="header-left">
+            <h1>Formule 1</h1>
+            <img src="F1.svg.png" alt="Logo Formule 1">
+        </div>
+        <div class="header-right">
+            <button id="Circuit">Circuit</button>
+            <button id="Pilote">Pilote</button>
+            <button id="Équipe">Équipe</button>
+        </div>
+    </div>
+</header>
+<main id="main-content">
+    <section class="classement">
+        <h2 id="titre_niveau2"><!-- vide --></h2>
+        <table>
+            <!-- Vos données seront insérées ici -->
+        </table>
+    </section>
+</main>
+<footer>
+    <p>Ousseynou Diop</p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/ousseynou-diop-sa/"><i class="fab fa-facebook-f"></i></a></li>
+    </ul>
+</footer>
+<script>
+    const circuit = document.getElementById("Circuit");
+circuit.addEventListener("click", () => {
+  window.location.href = "/circuit";
+});
+const pilote = document.getElementById("Pilote");
+pilote.addEventListener("click", () => {
+  window.location.href = "/driver";
+});
+const team = document.getElementById("Équipe");
+team.addEventListener("click", () => {
+  window.location.href = "/team";
+});
+
+</script>
+</body>
+</html>
